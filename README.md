@@ -26,7 +26,8 @@ From a **data engineering perspective**, the challenge is to:
 
 ## 🧱 High-Level Architecture
 
-![alt text](customer-churn-data-pipeline.png)
+![Customer Churn Data Pipeline Architecture](images/architecture.png)
+
 
 
 ---
