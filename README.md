@@ -26,15 +26,7 @@ From a **data engineering perspective**, the challenge is to:
 
 ## 🧱 High-Level Architecture
 
-Raw Data Source
-↓
-PostgreSQL (RAW schema)
-↓
-PostgreSQL (CORE schema)
-↓
-PostgreSQL (ML schema – Feature Tables)
-↓
-Python ML Pipeline (Downstream Consumer)
+![alt text](customer-churn-data-pipeline.png)
 
 
 ---
