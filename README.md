@@ -42,44 +42,12 @@ Python ML Pipeline (Downstream Consumer)
 ## 📁 Project Structure
 
 customer-churn-data-pipeline/
-│
-├── .env
-├── requirements.txt
+├── data_pipeline/ # Data ingestion logic
+├── sql/ # SQL transformations (RAW, CORE, ML)
+├── ml_pipeline/ # Downstream ML consumption
 ├── README.md
-│
-├── data_pipeline/
-│ └── src/
-│ └── loaddata.py
-│
-├── sql/
-│ ├── raw/
-│ │ └── create_raw_tables.sql
-│ │
-│ ├── core/
-│ │ ├── create_core_tables.sql
-│ │ └── transform_raw_to_core.sql
-│ │
-│ ├── ml/
-│ │ ├── create_ml_customer_churn_features.sql
-│ │ └── populate_ml_customer_churn_features.sql
-│ │
-│ └── validation/
-│ └── data_quality_checks.sql
-│
-├── ml_pipeline/
-│ ├── src/
-│ │ ├── data_loader.py
-│ │ ├── preprocess.py
-│ │ ├── train_and_predict.py
-│ │ └── risk_analysis.py
-│ │
-│ ├── models/
-│ │ └── churn_model.pkl
-│ │
-│ └── run_pipeline.py
-│
-└── docs/
-└── architecture.md
+├── requirements.txt
+└── .env
 
 
 ---
@@ -96,12 +64,12 @@ The **data pipeline** is responsible for preparing high-quality data using SQL-f
 
 ### Data Layers
 
-| Layer | Description |
-|-----|-------------|
-| RAW | Source data stored without modification |
-| CORE | Cleaned and standardized customer entities |
-| ML | Feature tables designed for predictive use |
-| Validation | Data quality and consistency checks |
+| Layer      | Description                                |
+|------------|--------------------------------------------|
+| RAW        | Source data stored without modification    |
+| CORE       | Cleaned and standardized customer entities |
+| ML         | Feature tables designed for predictive use |
+| Validation | Data quality and consistency checks        |
 
 ---
 
