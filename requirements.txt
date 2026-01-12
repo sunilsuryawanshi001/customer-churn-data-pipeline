@@ -1,0 +1,19 @@
+# Core data handling
+pandas
+
+# PostgreSQL connectivity
+psycopg2-binary
+sqlalchemy
+
+# Environment variable management
+python-dotenv
+
+# Notebooks
+jupyter
+ipykernel
+
+# (Optional, for later ML)
+numpy
+scikit-learn
+joblib
+

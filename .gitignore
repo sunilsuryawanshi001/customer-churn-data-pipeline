@@ -1,0 +1,21 @@
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+.env/
+
+# Model artifacts
+ml_pipeline/models/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
